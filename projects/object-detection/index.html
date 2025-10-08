@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sandbox & Pen-Testing Research Suite | Lane Westerman</title>
+  <link rel="stylesheet" href="../../styles.css">   <!-- global vars -->
+  <link rel="stylesheet" href="../styles.css">  <!-- project-specific -->
+
+</head>
+
+<body>
+  <!-- Background animation from main site -->
+  <div class="bg-animation">
+    <div class="gradient-orb orb1"></div>
+    <div class="gradient-orb orb2"></div>
+    <div class="gradient-orb orb3"></div>
+  </div>
+
+  <!-- Navigation -->
+  <div class="project-topbar">
+    <a href="../../index.html" class="back-home" aria-label="Back to home">
+      <span class="arrow" aria-hidden="true">←</span>
+      <span>Home</span>
+    </a>
+
+    <div class="project-nav nav-arrows" aria-label="Project navigation">
+      <a href="../object-detection/index.html" class="nav-arrow" title="Previous project">←</a>
+      <a href="../medical-image-classifier/index.html" class="nav-arrow" title="Next project">→</a>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="project-header">
+    <h1 class="project-title">
+      Integrated Sandbox & Pen-Testing Research Suite
+    </h1>
+  </header>
+
+  <!-- Main Content -->
+  <section class="project-page-details glass" aria-labelledby="project-summary-heading">
+    <div class="project-summary-wrapper">
+
+      <!-- Typing animation -->
+      <div class="typing-container">
+        <span class="typing-text" id="typing-text"></span><span class="typing-cursor"></span>
+      </div>
+
+      <!-- Summary -->
+      <div class="project-description-group">
+        <p id="project-summary-heading">
+          This project involved building an isolated sandbox environment for cybersecurity experimentation.
+          Multiple virtual machines were configured with <strong>pfSense</strong> to manage network segmentation and enforce access control.
+          <strong>Kali Linux</strong> served as the attack machine while <strong>Ubuntu Server</strong> and <strong>Windows 10</strong>
+          acted as targets for exploitation and defense analysis.
+        </p>
+
+        <p>
+          Controlled penetration tests included buffer overflow attacks, SQL injections on DVWA, and password cracking with John the Ripper.
+          The project culminated in detailed documentation of vulnerabilities, exploit mitigations, and network traffic analysis using Wireshark and Snort.
+        </p>
+      </div>
+    </div>
+
+    <!-- Tech Stack -->
+    <div class="tech-badges">
+      <span class="tech-badge">Metasploit</span>
+      <span class="tech-badge">Wireshark</span>
+      <span class="tech-badge">Kali Linux</span>
+      <span class="tech-badge">pfSense</span>
+      <span class="tech-badge">VirtualBox</span>
+      <span class="tech-badge">Ubuntu Server</span>
+      <span class="tech-badge">Snort IDS</span>
+      <span class="tech-badge">DVWA</span>
+      <span class="tech-badge">John the Ripper</span>
+    </div>
+  </section>
+
+  <!-- Demo Section -->
+  <section class="demo-section">
+    <h2>Project Demo</h2>
+    <div class="demo-gallery">
+      <article class="demo-item">
+        <!-- Replace with actual image when available -->
+      <img src="assets/NetworkTopology.png" alt="Network topology diagram showing VMs and firewall segmentation">
+      </article>
+
+      <article class="demo-item">
+        <!-- Replace with actual image when available -->
+        <div class="demo-placeholder">💻 Exploit Console</div>
+        <!-- <img src="demo-exploit.png" alt="Exploit development console screenshot"> -->
+      </article>
+
+      <article class="demo-item">
+        <!-- Replace with actual video when available -->
+        <div class="demo-placeholder">📊 Traffic Analysis</div>
+        <!-- <video controls muted playsinline>
+          <source src="demo-analysis.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video> -->
+      </article>
+    </div>
+
+    <!-- Related Projects -->
+    <div class="related-projects">
+      <h3>Explore More Projects</h3>
+      <div class="related-grid">
+        <a href="../object-detection/index.html" class="related-project-card">
+          <div class="related-project-icon">🎯</div>
+          <div class="related-project-name">Object Detection System</div>
+        </a>
+
+        <a href="../hurricane-classifier/index.html" class="related-project-card">
+          <div class="related-project-icon">🏥</div>
+          <div class="related-project-name">Hurricane Classifier</div>
+        </a>
+
+        <a href="../stock-price-forecast/index.html" class="related-project-card">
+          <div class="related-project-icon">📈</div>
+          <div class="related-project-name">Stock Price Forecasting</div>
+        </a>
+      </div>
+    </div>
+  </section>
+<script src="../script.js"></script>
+</body>
+</html>
