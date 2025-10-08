@@ -12,7 +12,7 @@
             });
         });
 
-        // Navbar scroll effect
+        /* Navbar scroll effect
         const navbar = document.getElementById('navbar');
         window.addEventListener('scroll', () => {
             if (window.scrollY > 100) {
@@ -21,6 +21,7 @@
                 navbar.classList.remove('scrolled');
             }
         });
+        */
 
         // Progress bar
         window.addEventListener('scroll', () => {
@@ -84,24 +85,15 @@
             e.target.reset();
         });
 
-        // Project card hover effects with 3D tilt
+        // Project card hover effect 
         document.querySelectorAll('.project-card').forEach(card => {
-            card.addEventListener('mousemove', (e) => {
-                const rect = card.getBoundingClientRect();
-                const x = e.clientX - rect.left;
-                const y = e.clientY - rect.top;
-                
-                const centerX = rect.width / 2;
-                const centerY = rect.height / 2;
-                
-                const rotateX = (y - centerY) / 10;
-                const rotateY = (centerX - x) / 10;
-                
-                card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-10px)`;
+            card.addEventListener('mouseenter', () => {
+                card.style.transform = 'translateY(-10px)';
+                card.style.transition = 'transform 0.3s ease';
             });
-            
+
             card.addEventListener('mouseleave', () => {
-                card.style.transform = '';
+                card.style.transform = 'translateY(0)';
             });
         });
 
